@@ -1,0 +1,40 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-06-13 18:29:42
+project --topLevelPackage org.excale.auth --projectName excale-authorization --java 6 --packaging WAR
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-06-13 18:29:56
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-06-13 18:33:41
+hint
+persistence setup --database MSSQL --provider HIBERNATE --databaseName foo --password pass --userName user --hostName 127.0.0.1 --
+hint
+entity jpa --class org.excale.auth.model.Application
+hint
+field string --fieldName name
+// [failed] field string --fieldName from
+// [failed] field string --fieldName to
+field string --fieldName status
+hint
+hint entities
+// [failed] entity jpa --class org.excale.auth.user
+hint
+hint fields
+// [failed] field string --fieldName name
+// [failed] entity jpa --class org.excale.auth.user
+entity jpa --class org.excale.auth.appuser
+entity jpa --class org.excale.auth.model.appuser
+field string --fieldName name
+entity jpa --class org.excale.auth.model.Application
+entity jpa --class org.excale.auth.model.Application
+// [failed] field number --type int --fieldName no
+// [failed] field number --type int --fieldName number
+field number --type int --fieldName num
+field date --type java.util.Date --fieldName new_date
+field date --type java.util.Date --fieldName auth_date
+field string --fieldName name
+field number --type int --fieldName status
+// [failed] field string --fieldName from
+field string --fieldName from_add
+field string --fieldName to_add
+entity jpa --class org.excale.auth.model.appuser
+field string --fieldName name
+field number --type int --fieldName type
+field string --fieldName user_id
+web mvc setup
